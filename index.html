@@ -13,8 +13,12 @@
 <body>
     <div class="container d-flex align-items-center vh-100">
         <div class="row col-12 justify-content-center ">
-            <button type="button" class="btn btn-outline-secondary col-3">Generation mdp</button>
-            <button type="button" class="btn btn-outline-secondary col-4 disabled ms-3"></button>
+            
+            <button type="button" class="btn btn-outline-secondary col-3" name="generer" value="Générer" 
+            onclick="generer_password()">Generation mdp</button>
+            
+            <div id="resultat" class=" border border-secondary  col-4 ms-3 rounded d-flex p-1 justify-content-center"></div>
+        
         </div>
     </div>
     
