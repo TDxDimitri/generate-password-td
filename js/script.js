@@ -1,20 +1,20 @@
 var res= document.querySelector("#resultat");
+
 function generer_password(){
 
 
 
-let ok = 'azertyupqsdfghjkmwxcvbn23456789AZERTYUPQSDFGHJKMWXCVBN[:punct]';
-let mdp='';
+    let ok = 'azertyupqsdfghjkmwxcvbn23456789AZERTYUPQSDFGHJKMWXCVBN[:punct]';
+    let mdp='';
+    var input = document.getElementById("in").value;
+        for(i=0;i<input;i++){
+            
+            var transfo = Math.round(Math.random()*ok.length);
+            
+            mdp+=ok.substring(transfo,transfo+1);
+        }
 
-longueur = 15;
-    for(i=0;i<longueur;i++){
-        
-        var transfo = Math.round(Math.random()*ok.length);
-        
-        mdp+=ok.substring(transfo,transfo+1);
-}
-
-res.innerHTML = mdp 
+    res.innerHTML = mdp 
 
 
 }
