@@ -1,9 +1,7 @@
-var res= document.querySelector("#resultat");
+
 
 function generer_password(){
-
-
-
+    var res= document.querySelector("#resultat");
     let ok = 'azertyupqsdfghjkmwxcvbn23456789AZERTYUPQSDFGHJKMWXCVBN@$#*![:punct]';
     let mdp='';
     var input = document.getElementById("in").value;
